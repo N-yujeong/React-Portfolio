@@ -1,15 +1,9 @@
-import Resume from "../introduction/Resume/page";
-import SelfIntro from "../introduction/SelfIntro/page";
+import Resume from '../introduction/Resume/page';
+import SelfIntro from '../introduction/SelfIntro/page';
 
 const intros = [
-  {
-    tab: "이력서",                            // 메뉴 버튼
-    content: <Resume></Resume>,   // 컴포넌트 
-  },
-  {
-    tab: "자기소개서",
-    content: <SelfIntro></SelfIntro>,
-  },
+  { tab: '이력서', content: <Resume /> },
+  { tab: '자기소개서', content: <SelfIntro /> },
 ];
 
 export default intros;
