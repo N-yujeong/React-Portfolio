@@ -1,12 +1,3 @@
-import Project1 from '../project/project1/page';
-
-const projects = [
-  { tab: 'Project 1', content: <Project1 /> },
-];
-
-export default projects;
-
-// `app/project/project1/page.js`: 첫 번째 프로젝트 컴포넌트
 export default function Project1() {
   return (
     <div>
