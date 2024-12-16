@@ -11,8 +11,12 @@ function Carears() {
   
   return (
     <div id="career">
-      {careers.map((career, index) => (
-        <button onClick={contentChange} value={index}>
+      {careers.map((career, idx) => (
+        <button 
+          key={idx}        // 고유 key 추가
+          onClick={contentChange} 
+          value={idx}
+        >
           {career.tab}
         </button>
       ))}
