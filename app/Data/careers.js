@@ -1,5 +1,6 @@
 import Career1 from "../career/career1/page.js";
 import Career2 from "../career/career2/page.js";
+import Career3 from "../career/career3/page.js";
 
 const careers = [
   {
@@ -7,8 +8,12 @@ const careers = [
     content: <Career1></Career1>,    // 컴포넌트
   },
   {
-    tab: "자격증 및 그외 스펙",
+    tab: "사회봉사 및 연수",
     content: <Career2></Career2>,
+  },
+  {
+    tab: "자격증 및 그외 스펙",
+    content: <Career3></Career3>,
   },
 ];
 
