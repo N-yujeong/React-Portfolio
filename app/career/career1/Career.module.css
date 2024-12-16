@@ -1,29 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
-
 .container {
+    margin: 100px;
     padding: 20px;
-    font-family: "Nanum Pen Script", sans-serif;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
 }
 
-fieldset {
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
-    padding: 10px;
-    font-family: "Song Myung", serif;
+.fieldset {
+    border: 10px solid #4caf50;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-legend {
+.legend {
     font-weight: bold;
     font-size: 1.5em;
-    font-family: "Nanum Gothic", sans-serif;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-    font-family: "Nanum Pen Script", sans-serif;
+.list {
+    list-style-type: disc;
+    margin: 10px 20px;
+    padding-left: 100px;
+}
+
+.list li {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
 }

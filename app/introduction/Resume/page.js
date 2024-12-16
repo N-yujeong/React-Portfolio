@@ -1,34 +1,28 @@
-import styles from './Resume.module.css';
+import styles from './Resume.module.css’;    // 본 세그먼트의 스타일
 
-export default function Resume() {
+const Resume = () => {
   return (
-    <div id="resume" className={styles.resume}>
-      <h2>1. 기초 자료</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td rowSpan="4">
-              <img src="/image/index.jpg" alt="프로필 사진" />
-            </td>
-            <td>성명</td>
-            <td>남유정</td>
-            <td>한문</td>
-            <td className="name">南侑廷</td>
-          </tr>
-          <tr>
-            <td>주민등록번호</td>
-            <td colSpan="3">041108-4030326</td>
-          </tr>
-          <tr>
-            <td>E-mail</td>
-            <td colSpan="3">1108dbwjd@gmail.com</td>
-          </tr>
-          <tr>
-            <td>휴대폰</td>
-            <td colSpan="3">010-8608-7396</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <>
+      <div className={styles.resume}>
+        <em className={styles.em}>1. 기초 자료</em>
+        <table className={styles.table}>
+          <tbody>
+            <tr>
+              <td rowSpan="6">사 진</td>
+              <td style={{ backgroundColor: "#e3fcff" }}>성 명</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div className={styles.pledge}>
+          <p>위의 사실이 틀림이 없음을 서약합니다.</p>
+          <p>작성일 2023년 10월 25일</p>
+          <p>작성자 (인)</p>
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default Resume;
