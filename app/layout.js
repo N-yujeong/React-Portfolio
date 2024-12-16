@@ -6,9 +6,9 @@ export default function Layout({ children }) {
     <html>
       <body>
         <header>
-          김창복의 portfolio
+          남유정정의 portfolio
           <br />
-          "준비된 개발자"
+          "끊임없이 발전하는 개발자"
         </header>
 
         <div className="container">
@@ -24,9 +24,9 @@ export default function Layout({ children }) {
         </div>
         <footer>
           <i>
-            Copyright 2023. 지은이 all rights reserved.
+            Copyright 2024. 남유정 all rights reserved.
             <br />
-            연락처 : 010-8906-3946
+            연락처 : 010-8608-7396
           </i>
         </footer>
       </body>
