@@ -19,6 +19,6 @@ function Contest() {
       {contests[index].content}
     </div>
   );
-}
+};
 
 export default Contest;

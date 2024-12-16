@@ -1,72 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 전체 높이 설정 */
+}
+
 body {
-    font-family: "Nanum Pen Script";
-    background-color: lightgoldenrodyellow;
-    line-height: 1.5;
-    font-weight: bolder;
-    margin-left : 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nanum Pen Script";
+  background-color: lightgoldenrodyellow;
+  line-height: 1.5;
+  font-weight: bolder;
 }
 
 header {
-    text-align: center;
-    font-size: 250px;
-    margin-bottom: 50px;
-}
-
-#index{
-    font-size: 150px;
-    margin-left : 500px; 
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 25px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 450px 1fr;
-}
-nav {
-    font-family: "Nanum Pen Script";
-    margin-left: 20px;
-    font-size: 100px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
 }
 
-main{
-    font-family: "Nanum Pen Script";
-    margin-left: 20px;
-    background-color: lightgoldenrodyellow;
-    font-size: 70px;
+nav {
+  margin-left: 20px;
+  font-size: 33px;
+}
+
+main {
+  flex: 1; /* 남은 공간을 채움 */
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+  justify-content: center;
+  margin: 50px 150px;
+  font-size: 28px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my_photo {
+  margin-top: 20px; /* 텍스트와 이미지 사이에 간격 추가 */
 }
 
 footer {
-    text-align: center;
-    background-color: gray;
-    color: white;
-    font-size: 100px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  font-size: 33px;
+  padding: 10px 0;
+  width: 100%; /* 가로 전체 차지 */
+  margin-top: auto; /* 자동으로 아래에 배치 */
 }
 
 a:link, a:visited {
-    background-color:#eeeeee; 
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    width:450px;
-    font-size: 1.5em;
+  background-color: #eeeeee;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  font-size: 1.5em;
 }
 
-a:hover, a:active { 
-    background-color: #FF4500; 
-    color:white ;
+a:hover, a:active {
+  background-color: #FF4500;
 }
 
 button {
-    font-family: "Nanum Pen Script";
-    background-color: blue;
-    color: white ;
-    padding: 10px 20px;
-    margin: 20px; 
-    font-size: 2em;
-    cursor: pointer;
-    transition-duration: 1s;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin: 2px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition-duration: 1s;
 }
 
 button:hover {
-    background-color: orange;
-    color: white;
+  background-color: orange;
+  color: white;
 }
