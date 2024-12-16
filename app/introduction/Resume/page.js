@@ -1,4 +1,4 @@
-import styles from './Resume.module.css’;    // 본 세그먼트의 스타일
+import styles from './Resume.module.css';    // 본 세그먼트의 스타일
 
 const Resume = () => {
   return (
