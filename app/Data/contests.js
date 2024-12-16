@@ -4,15 +4,15 @@ import Contest3 from "../contest/contest3/page.js";
 
 const contests = [
   {
-    tab: "Contest1",                              // 메뉴 버튼
+    tab: "공모전(1)",                              // 메뉴 버튼
     content: <Contest1></Contest1>,     // 컴포넌트
   },
   {
-    tab: "Contest2",
+    tab: "공모전(2)",
     content: <Contest2></Contest2>,
   },
   {
-    tab: "Contest3",
+    tab: "공모전(3)",
     content: <Contest3></Contest3>,
   },
 ];

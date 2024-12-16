@@ -1,22 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
 .container {
-    font-size: 1em;
-    margin-left: 100px;
-    padding: 200px;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px; /* 컨테이너의 최대 너비를 늘림 */
+    font-family: "Nanum Pen Script";
 }
 
+.title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image {
+    display: block;
+    margin: 0 0 20px 0; /* 이미지 왼쪽 여백 제거 */
+    max-width: 70%;
+    height: auto;
+  }
+
 .fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 2px solid #ccc;
+    padding: 20px;
     margin-top: 20px;
-    border-radius: 5px;
+    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+    min-height: 300px; /* 최소 높이 설정 */
+    box-sizing: border-box; /* 패딩과 보더를 포함해 크기 지정 */
 }
 
 .legend {
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .list {
-    list-style-type: disc;
-    margin-left: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: darkblue;
 }
