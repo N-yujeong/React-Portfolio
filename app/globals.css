@@ -7,12 +7,18 @@ body {
   background-color: lightgoldenrodyellow;
   line-height: 1.5;
   font-weight: bolder;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 화면 높이를 최소 100%로 설정 */
+  margin: 0;
 }
 
 header {
   text-align: center;
   font-size: 50px;
-  margin-bottom: 25px;
+  margin: 0; /* 여백 제거 */
+  padding: 25px 0; /* 상단과 하단에 균일한 패딩 추가 */
 }
 
 .container {
@@ -51,6 +57,9 @@ footer {
   background-color: gray;
   color: white;
   font-size: 33px;
+  padding: 10px 0;
+  width: 100%; /* 가로 전체 차지 */
+  margin-top: auto; /* 자동으로 남은 공간 밀어내기 */
 }
 
 a:link, a:visited {
