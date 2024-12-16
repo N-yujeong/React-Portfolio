@@ -1,25 +1,19 @@
-'use client'     // 클라이언트 컴포넌트
+'use client';
+import { useState } from 'react';
+import intros from '../Data/intros';
 
-import { useState } from "react";
-import intros from "../Data/intros";  // 데이터 파일 
-
-function Introduction() {
-  const [index, setIndex] = useState(0);
-
-  const contentChange = (event) => {
-    setIndex(event.target.value);
-  };
+export default function Introduction() {
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
     <div>
-      {intros.map((intro, idx) => (
-        <button key={idx} onClick={contentChange} value={idx}>
+      {intros.map((intro, index) => (
+        <button key={index} onClick={() => setSelectedIndex(index)}>
           {intro.tab}
         </button>
-      ))}      <br /> <br />
-
-       <div>{intros[index]?.content}</div>
+      ))}
+      <br /><br />
+      {intros[selectedIndex].content}
     </div>
   );
 }
-export default Introduction;

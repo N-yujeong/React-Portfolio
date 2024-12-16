@@ -1,25 +1,18 @@
-'use client'     // 클라이언트 컴포넌트
+'use client';
+import { useState } from 'react';
+import contests from '../Data/contests';
 
-import { useState } from "react";
-import contests from "../Data/contests";
+export default function Contest() {
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-function Contest() {
-    const [index, setIndex] = useState(0);
-
-    const contentChange = (event) => {
-        setIndex(event.target.value);
-    };
-
-    return (
-        <div id="contest">
-            {contests.map((contest, index) => (
-            <button onClick={contentChange} value={index}>
-                {contest.tab}
-            </button>
-            ))}
-            {contests[index].content}
-        </div>
-    );
+  return (
+    <div id="contest">
+      {contests.map((contest, index) => (
+        <button key={index} onClick={() => setSelectedIndex(index)}>
+          {contest.tab}
+        </button>
+      ))}
+      {contests[selectedIndex].content}
+    </div>
+  );
 }
-
-export default Contest;

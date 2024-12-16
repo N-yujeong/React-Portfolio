@@ -1,25 +1,18 @@
-'use client'     // 클라이언트 컴포넌트
+'use client';
+import { useState } from 'react';
+import projects from '../Data/projects';
 
-import { useState } from "react";
-import projects from "../Data/projects";
+export default function Project() {
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-function Project() {
-    const [index, setIndex] = useState(0);
-
-    const contentChange = (event) => {
-        setIndex(event.target.value);
-    };
-
-    return (
-        <div id="project">
-            {projects.map((project, index) => (
-                <button onClick={contentChange} value={index}>
-                    {project.tab}
-                </button>
-            ))}
-            {projects[index].content}
-        </div>
-    );
+  return (
+    <div>
+      {projects.map((project, index) => (
+        <button key={index} onClick={() => setSelectedIndex(index)}>
+          {project.tab}
+        </button>
+      ))}
+      {projects[selectedIndex].content}
+    </div>
+  );
 }
-
-export default Project;
