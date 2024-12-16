@@ -24,6 +24,21 @@ const Career1 = () => {
                     <li>담당업무: 음료 제조, 고객 응대, 매장 관리 등</li>
                 </ul>
             </fieldset>
+            <fieldset>
+                <legend>라디오베이</legend>
+                <ul>
+                    <li>근무기간: 2023.07 ~ 2023.09</li>
+                    <li>담당업무: 고객 응대, 홀 서빙, 설거지 등</li>
+                    <li>기타: 단기알바</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>보배반점</legend>
+                <ul>
+                    <li>근무기간: 2022.12 ~ 2023.04</li>
+                    <li>담당업무: 홀 서빙, 배달 포장 등</li>
+                </ul>
+            </fieldset>
         </div>
     );
 };
