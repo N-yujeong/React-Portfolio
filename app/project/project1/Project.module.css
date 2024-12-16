@@ -1,0 +1,22 @@
+.container {
+    font-size: 1em;
+    margin-left: 100px;
+    padding: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.legend {
+    font-weight: bold;
+}
+
+.list {
+    list-style-type: disc;
+    margin-left: 20px;
+}

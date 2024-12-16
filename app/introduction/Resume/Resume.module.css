@@ -1,0 +1,42 @@
+.resume {
+    border: 1px solid #ccc;
+    padding: 200px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+}
+
+.em {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #e3fcff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+.pledge {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #555;
+}
