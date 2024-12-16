@@ -2,7 +2,7 @@ import Contest1 from "../contest/contest1/page.js";
 import Contest2 from "../contest/contest2/page.js";
 import Contest3 from "../contest/contest3/page.js";
 
-const conests = [
+const contests = [
   {
     tab: "Contest1",                              // 메뉴 버튼
     content: <Contest1></Contest1>,     // 컴포넌트
