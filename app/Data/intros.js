@@ -11,3 +11,5 @@ const intros = [
     content: <SelfIntro></SelfIntro>,
   },
 ];
+
+export default intros;
