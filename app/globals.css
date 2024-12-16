@@ -1,62 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
 body {
   font-family: "Nanum Pen Script";
   background-color: lightgoldenrodyellow;
   line-height: 1.5;
   font-weight: bolder;
-  margin-left : 50px;
-  }
+}
+
 header {
   text-align: center;
-  font-size: 250px;
-  margin-bottom: 50px;
+  font-size: 50px;
+  margin-bottom: 25px;
 }
-#index{
-  font-size: 150px;
-  margin-left : 500px; 
-}
+
 .container {
   display: grid;
-  grid-template-columns: 450px 1fr;
+  grid-template-columns: 150px 1fr;
 }
+
 nav {
-  font-family: "Nanum Pen Script";
   margin-left: 20px;
-  font-size: 100px;
+  font-size: 33px;
 }
-main{
-  font-family: "Nanum Pen Script";
-  margin-left: 20px;
-  background-color: lightgoldenrodyellow;
-  font-size: 70px;
+
+main {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+  justify-content: center;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-top: 50px;
+  font-size: 28px;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my_photo {
+  margin-top: 20px; /* 텍스트와 이미지 사이에 간격 추가 */
+}
+
 footer {
   text-align: center;
   background-color: gray;
   color: white;
-  font-size: 100px;
+  font-size: 33px;
 }
+
 a:link, a:visited {
-  background-color:#eeeeee; 
+  background-color: #eeeeee;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
-  width:450px;
+  width: 150px;
   font-size: 1.5em;
 }
-a:hover, a:active { 
-  background-color: #FF4500; 
-  color:white ;
+
+a:hover, a:active {
+  background-color: #FF4500;
 }
+
 button {
-  font-family: "Nanum Pen Script";
   background-color: blue;
-  color: white ;
+  color: white;
   padding: 10px 20px;
-  margin: 20px; 
-  font-size: 2em;
+  margin: 2px;
+  font-size: 1.5em;
   cursor: pointer;
   transition-duration: 1s;
 }
+
 button:hover {
   background-color: orange;
   color: white;
