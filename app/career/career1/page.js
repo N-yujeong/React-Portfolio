@@ -1,45 +1,25 @@
-import styles from './Career.module.css';
+import styles from "./Career.module.css";
 
-const Career1 = () => {
-    return (
-        <div className={styles.container}>
-            <fieldset>
-                <legend>흑화돗</legend>
-                <ul>
-                    <li>근무기간: 2023.10 ~ 재직중</li>
-                    <li>담당업무: 고기 굽기, 고객 응대, 매장 청소, 홀 서빙 등</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>레이지먼데이</legend>
-                <ul>
-                    <li>근무기간: 2023.08 ~ 재직중</li>
-                    <li>담당업무: 음료 제조, 고객 응대, 매장 관리 등</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>메가커피</legend>
-                <ul>
-                    <li>근무기간: 2023.06 ~ 2024.03</li>
-                    <li>담당업무: 음료 제조, 고객 응대, 매장 관리 등</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>라디오베이</legend>
-                <ul>
-                    <li>근무기간: 2023.07 ~ 2023.09</li>
-                    <li>담당업무: 고객 응대, 홀 서빙, 설거지 등</li>
-                    <li>기타: 단기알바</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>보배반점</legend>
-                <ul>
-                    <li>근무기간: 2022.12 ~ 2023.04</li>
-                    <li>담당업무: 홀 서빙, 배달 포장 등</li>
-                </ul>
-            </fieldset>
-        </div>
+function Career1() {
+return (
+    <div className={styles.container}>
+    <h1>아르바이트 및 인턴</h1>
+    <fieldset className={styles.fieldset}>
+        <legend className={styles.legend}>아르바이트</legend>
+        <ul className={styles.list}>
+            <li>아르바이트에 대한 내용을 작성</li>
+            <li>아르바이트에 대한 내용을 작성</li>
+        </ul>
+    </fieldset>
+
+    <fieldset className={styles.fieldset}>
+        <legend className={styles.legend}>인턴</legend>
+        <ul className={styles.list}>
+            <li>인턴에 대한 내용을 작성</li>
+            <li>인턴에 대한 내용을 작성</li>
+        </ul>
+        </fieldset>
+    </div>
     );
 };
 
