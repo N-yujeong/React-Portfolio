@@ -34,11 +34,11 @@ nav {
 }
 
 main {
-  flex: 1; /* 남은 공간을 채움 */
-  display: flex;
-  flex-direction: column; /* 세로로 정렬 */
-  justify-content: center;
-  margin: 50px 150px;
+  flex: 1;
+  display: flex; /* 가로로 정렬 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: flex-start; /* 위쪽 정렬 */
+  margin: 10px 150px; /* 상단 여백을 줄임 */
   font-size: 28px;
 }
 
@@ -88,4 +88,89 @@ button {
 button:hover {
   background-color: orange;
   color: white;
+}
+
+/* 사진 섹션 스타일 */
+.photo-section {
+  flex: 0 0 300px; /* 고정 너비 설정 */
+  margin-right: 50px; /* 사진과 로그인 폼 사이 여백 */
+  text-align: center;
+  position: relative; /* 사진 위치 고정 */
+  top: 0; /* 고정된 상단 위치 */
+}
+
+.photo-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* 사진 섹션 스타일 */
+.photo-section {
+  flex: 0 0 300px; /* 고정 너비 설정 */
+  margin-right: 170px; /* 오른쪽 여백을 크게 설정 */
+  margin-left: 30px;
+  text-align: center;
+}
+
+.photo-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.login-form {
+  flex: 0 0 700px; /* 고정 너비 설정 */
+  height: 370px; /* 고정된 높이 설정 */
+  margin-top: 100px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(250, 242, 210);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: orange;
+}
+
+/* 로그인 후 환영 메시지와 버튼 영역 스타일 */
+.logged-in-container {
+  display: flex; /* Flexbox 적용 */
+  flex-direction: column; /* 세로 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  height: 300px; /* 고정 높이 설정 */
+  text-align: center; /* 텍스트 가운데 정렬 */
 }
