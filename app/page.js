@@ -2,16 +2,17 @@
 
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import { useRouter } from "next/navigation"; // 라우터 import
+import { useRouter, useSearchParams } from "next/navigation"; // 라우터 및 쿼리 파라미터
 import "./globals.css";
 
 export default function Home() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // 초기값을 false로 설정
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // 초기값 false
   const router = useRouter();
+  const searchParams = useSearchParams(); // URL 파라미터 확인
 
-  // 클라이언트에서만 실행되도록 수정
+  // 쿠키 검사 후 로그인 상태 설정
   useEffect(() => {
     const cookieLogin = Cookies.get("isLoggedIn");
     if (cookieLogin === "true") {
@@ -19,19 +20,24 @@ export default function Home() {
     }
   }, []);
 
-  // 비로그인 상태에서 다른 페이지 접근 시 경고창 띄우기
+  // 비로그인 상태에서 경고창 표시 및 리다이렉트
   useEffect(() => {
     if (!isLoggedIn) {
-      alert("로그인 후 이용해주세요.");
-      router.push("/"); // 홈 페이지로 리다이렉트
+      if (searchParams.get("error") === "unauthorized") {
+        setTimeout(() => {
+          alert("로그인 후 이용해주세요.");
+          router.replace("/"); // 홈 페이지로 이동
+        }, 0);
+      }
     }
-  }, [isLoggedIn, router]);
+  }, [isLoggedIn, searchParams, router]);
 
   const handleLogin = (e) => {
     e.preventDefault();
     if (username === "yujeong" && password === "1234") {
       Cookies.set("isLoggedIn", "true", { expires: 1 }); // 쿠키 설정
       setIsLoggedIn(true);
+      router.push("/"); // 로그인 후 홈으로 이동
     } else {
       alert("아이디 또는 비밀번호가 잘못되었습니다.");
     }
@@ -42,6 +48,7 @@ export default function Home() {
     setIsLoggedIn(false);
     setUsername("");
     setPassword("");
+    router.replace("/"); // 로그아웃 후 홈 페이지로 이동
   };
 
   return (
