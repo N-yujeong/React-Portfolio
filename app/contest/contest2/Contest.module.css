@@ -1,33 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
 .container {
-    margin: 0;
-    padding: 20px;
-    max-width: 1200px; /* 컨테이너의 최대 너비를 늘림 */
-    font-family: "Nanum Pen Script";
+  margin: 0;
+  padding: 20px;
+  max-width: 1200px; /* 컨테이너의 최대 너비를 늘림 */
+  font-family: "Nanum Pen Script";
 }
 
 .title {
-  text-align: left;
+  text-align: left; /* 왼쪽 정렬 */
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
 }
 
 .image {
-    display: block;
-    margin: 0 0 20px 0; /* 이미지 왼쪽 여백 제거 */
-    max-width: 30%;
-    height: auto;
+  display: block;
+  margin: 0 0 20px 0; /* 이미지 왼쪽 여백 제거 */
+  max-width: 30%;
+  height: auto;
 }
 
 .fieldset {
-    border: 2px solid #ccc;
-    padding: 20px;
-    margin-top: 20px;
-    width: 100%; /* 부모 요소의 너비를 100%로 설정 */
-    min-height: 300px; /* 최소 높이 설정 */
-    box-sizing: border-box; /* 패딩과 보더를 포함해 크기 지정 */
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  width: 1100px; /* 부모 요소의 너비를 100%로 설정 */
+  min-height: 300px; /* 최소 높이 설정 */
+  box-sizing: border-box; /* 패딩과 보더를 포함해 크기 지정 */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .legend {
@@ -37,11 +39,16 @@
 
 .list {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 0; /* 리스트 왼쪽 여백 제거 */
   margin-bottom: 15px;
 }
 
-.subList {
-  list-style-type: circle;
-  margin-left: 40px;
+.list .list {
+  list-style-type: circle; /* 하위 리스트는 비어있는 동그라미 */
+  margin-left: 20px; /* 들여쓰기 추가 */
+}
+
+.listItem {
+  margin-bottom: 5px;
+  line-height: 1.6;
 }
